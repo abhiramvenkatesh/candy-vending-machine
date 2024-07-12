@@ -1,0 +1,29 @@
+Time resolution is 1 ps
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  5 20
+145
+125145 20
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  3  9
+ 55 64  9
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  3  9
+$finish called at time : 23 ns : File "C:/Users/V Abhiram/Desktop/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/tb.v" Line 44

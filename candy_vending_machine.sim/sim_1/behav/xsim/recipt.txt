@@ -1,0 +1,36 @@
+candy number4
+candy quantity 3
+candy pric  5
+total 20
+updated balance125
+
+candy number4
+candy quantity 3
+candy pric  3
+total  9
+updated balance 55
+
+candy number4
+candy quantity 3
+candy pric  5
+total 20
+updated balance125
+
+candy number4
+candy quantity 3
+candy pric  3
+total  9
+updated balance 55
+
+candy number4
+candy quantity 3
+candy pric  5
+total 20
+updated balance125
+
+candy number4
+candy quantity 3
+candy pric  3
+total  9
+updated balance 55
+

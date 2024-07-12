@@ -1,0 +1,332 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sun Nov 19 02:09:10 2023
+# Process ID: 21744
+# Current directory: C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.runs/synth_1
+# Command line: vivado.exe -log tb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tb.tcl
+# Log file: C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.runs/synth_1/tb.vds
+# Journal file: C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.runs/synth_1\vivado.jou
+# Running On: inspiron, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 4, Host memory: 8316 MB
+#-----------------------------------------------------------
+source tb.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 437.930 ; gain = 164.602
+Command: synth_design -top tb -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6764
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'bal' is not allowed [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:35]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'num' is not allowed [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:36]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'change' is not allowed [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:37]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 877.285 ; gain = 414.500
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'tb' [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/tb.v:23]
+WARNING: [Synth 8-6896] loop limit (65536) exceeded inside initial block, initial block items will be ignored [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/tb.v:35]
+INFO: [Synth 8-6157] synthesizing module 'Q' [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:23]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'candy.txt'; please make sure the file is added to project and has read permission, ignoring [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:60]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'price.txt'; please make sure the file is added to project and has read permission, ignoring [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:61]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'card.txt'; please make sure the file is added to project and has read permission, ignoring [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:62]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:66]
+WARNING: [Synth 8-567] referenced signal 'candy' should be on the sensitivity list [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:65]
+WARNING: [Synth 8-567] referenced signal 'qty' should be on the sensitivity list [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:65]
+WARNING: [Synth 8-567] referenced signal 'mode' should be on the sensitivity list [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:65]
+WARNING: [Synth 8-567] referenced signal 'money' should be on the sensitivity list [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:65]
+WARNING: [Synth 8-567] referenced signal 'bal' should be on the sensitivity list [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:65]
+WARNING: [Synth 8-567] referenced signal 'buffer2' should be on the sensitivity list [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:65]
+WARNING: [Synth 8-639] system function call 'fopen' not supported [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:151]
+INFO: [Synth 8-6155] done synthesizing module 'Q' (0#1) [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'num' does not match port width (8) of module 'Q' [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/tb.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'tb' (0#1) [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/tb.v:23]
+WARNING: [Synth 8-6014] Unused sequential element file_reg was removed.  [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:151]
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net buffer1 in module/entity Q does not have driver. [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:48]
+WARNING: [Synth 8-3848] Net buffer1 in module/entity Q does not have driver. [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:48]
+WARNING: [Synth 8-3848] Net buffer1 in module/entity Q does not have driver. [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:48]
+WARNING: [Synth 8-3848] Net buffer1 in module/entity Q does not have driver. [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:48]
+WARNING: [Synth 8-3848] Net buffer1 in module/entity Q does not have driver. [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:48]
+WARNING: [Synth 8-3848] Net buffer1 in module/entity Q does not have driver. [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:48]
+WARNING: [Synth 8-3848] Net buffer1 in module/entity Q does not have driver. [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:48]
+WARNING: [Synth 8-3848] Net buffer1 in module/entity Q does not have driver. [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:48]
+WARNING: [Synth 8-3848] Net buffer2[0] in module/entity Q does not have driver. [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:49]
+WARNING: [Synth 8-3848] Net clk in module/entity tb does not have driver. [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/tb.v:24]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1003.086 ; gain = 540.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1003.086 ; gain = 540.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1003.086 ; gain = 540.301
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'bal1_reg' [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:70]
+WARNING: [Synth 8-327] inferring latch for variable 'num_reg' [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:108]
+WARNING: [Synth 8-327] inferring latch for variable 'change1_reg' [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:69]
+WARNING: [Synth 8-327] inferring latch for variable 'num1_reg' [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:71]
+WARNING: [Synth 8-327] inferring latch for variable 'ns_reg' [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:68]
+WARNING: [Synth 8-327] inferring latch for variable 'i_reg' [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:82]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1003.086 ; gain = 540.301
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	   5 Input   32 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 6     
+	   5 Input    8 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 7     
+	   5 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (question/bal1_reg[7]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/bal1_reg[6]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/bal1_reg[5]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/bal1_reg[4]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/bal1_reg[3]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/bal1_reg[2]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/bal1_reg[1]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/bal1_reg[0]) is unused and will be removed from module tb.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'question/num_reg[7]/Q' [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:147]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:147]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:147]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'question/num_reg[6]/Q' [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:147]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:147]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:147]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'question/num_reg[5]/Q' [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:147]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:147]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:147]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'question/num_reg[4]/Q' [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:147]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:147]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.srcs/sources_1/new/Q.v:147]
+WARNING: [Synth 8-3332] Sequential element (question/num_reg[3]__0) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/num_reg[2]__0) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/num_reg[1]__0) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/num_reg[0]__0) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/change1_reg[7]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/change1_reg[6]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/change1_reg[5]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/change1_reg[4]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/change1_reg[3]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/change1_reg[2]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/change1_reg[1]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/change1_reg[0]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/num1_reg[7]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/num1_reg[6]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/num1_reg[5]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/num1_reg[4]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/num1_reg[3]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/num1_reg[2]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/num1_reg[1]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/num1_reg[0]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[31]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[30]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[29]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[28]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[27]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[26]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[25]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[24]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[23]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[22]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[21]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[20]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[19]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[18]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[17]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[16]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[15]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[14]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[13]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[12]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[11]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[10]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[9]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[8]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[7]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[6]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[5]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[4]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[3]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[2]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[1]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/ns_reg[0]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[31]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[30]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[29]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[28]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[27]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[26]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[25]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[24]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[23]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[22]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[21]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[20]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[19]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[18]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[17]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[16]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[15]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[14]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[13]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[12]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[11]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[10]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[9]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[8]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[7]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[6]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[5]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[4]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[3]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[2]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[1]) is unused and will be removed from module tb.
+WARNING: [Synth 8-3332] Sequential element (question/i_reg[0]) is unused and will be removed from module tb.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1162.230 ; gain = 699.445
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1162.230 ; gain = 699.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1162.230 ; gain = 699.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1162.230 ; gain = 699.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1162.230 ; gain = 699.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1162.230 ; gain = 699.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1162.230 ; gain = 699.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1162.230 ; gain = 699.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1162.230 ; gain = 699.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1162.230 ; gain = 699.445
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 15 critical warnings and 123 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1162.230 ; gain = 699.445
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1162.230 ; gain = 699.445
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1162.230 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1263.754 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: c283ca59
+INFO: [Common 17-83] Releasing license: Synthesis
+15 Infos, 123 Warnings, 15 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 1263.754 ; gain = 825.824
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/V Abhiram/OneDrive/Desktop/programing/verilog/candy_vending_machine/candy_vending_machine.runs/synth_1/tb.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tb_utilization_synth.rpt -pb tb_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 19 02:09:39 2023...
